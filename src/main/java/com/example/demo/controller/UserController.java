@@ -25,6 +25,7 @@ public class UserController
 	@PostMapping("/saveObj")
 	public User saveUser(@RequestBody User user)
 	{
+		System.out.println("just checking");
 		return userService.create(user);	
 	}
 
